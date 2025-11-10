@@ -1,23 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- ✅ CSP 必须放在最前面，在任何脚本或样式之前 -->
-    <meta http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src 'self';" />
-
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>热水的热茶</title>
-
-    <!-- 站点图标与样式文件 -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" crossorigin href="/assets/index-lDoKp6zC.css" />
   </head>
 
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; frame-src 'self';" />
+
+  
   <body>
     <div id="root"></div>
-
-    <!-- 应用入口脚本（构建产物或源码入口） -->
-    <script type="module" crossorigin src="/assets/index-tgnnCQCw.js"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
